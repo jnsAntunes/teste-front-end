@@ -1,0 +1,136 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+.icon {
+  max-height: 5px;
+}
+
+.header {
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+  margin-bottom: 5px;
+  background-color: red;
+  color: rgb(243, 243, 243);
+  font-size: xxx-large;
+}
+
+.body {
+  width: 100%;
+  min-height: 100vw;
+  background-color: rgb(243, 243, 243);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffffff;
+  width: 100%;
+  padding: 1.3rem 0;
+  border: 2px solid lightgray;
+}
+
+.titleCategory {
+  font-size: xx-large;
+  background-color: #ffffff;
+  font-weight: bolder;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  height: 15rem;
+  margin: 1.3rem;
+  padding: 1rem;
+  background-color: rgb(247, 132, 132);
+  border: solid;
+}
+
+.itemData {
+  display: grid;
+  max-width: 50%;
+  word-wrap: break-word;
+}
+
+.itemData h3 {
+  font-size: x-large;
+}
+
+.itemData h4 {
+  font-weight: bolder;
+}
+
+.thumbnail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.stars input[type=radio] {
+  display: none;
+}
+
+.stars label i.fa:before {
+  content: '\f005';
+  color: #FC0;
+}
+
+.stars input[type=radio]:checked~label i.fa:before {
+  color: #CCC;
+}
+
+.rightComponent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*  media queries   */
+
+@media(max-width: 1024px) {
+  .header {
+    height: 10%;
+    padding: 20px;
+    margin-bottom: 5px;
+    font-size: xx-large;
+  }
+
+  .item {
+    margin: 1rem;
+    padding: 0.5rem;
+  }
+}
+
+@media(max-width: 660px) {
+  .item {
+    background-color: #ffffff;
+  }
+
+  .thumbnail {
+    max-width: 70px;
+    max-height: 70px;
+  }
+
+  .group {
+    border: 1px solid lightgray;
+  }
+}
